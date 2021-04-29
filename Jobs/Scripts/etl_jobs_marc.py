@@ -27,7 +27,7 @@ cnx = open_db_cnx("scrapes")
 cursor = cnx.cursor()
 sp = """exec scrapes.etl.append_jobs_marc"""
 cnx.autocommit = True
-print_and_wait("Connecting to the Microsoft SQL Server database --> scrapes", 5)
+print_and_wait("Connecting to the Microsoft SQL Server database --> scrapes", 10)
 
 cursor.execute(sp)
 print_and_wait("Executed stored procedure --> scrapes.etl.append_jobs_marc", 10)
