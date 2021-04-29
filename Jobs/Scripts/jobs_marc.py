@@ -34,7 +34,7 @@ ua = UserAgent()
 userAgent = ua.random
 chrome_options.add_argument("--headless")
 chrome_options.add_argument(f"user-agent={userAgent}")
-driver = webdriver.Chrome(r"C:\Scrapes\Jobs\Scripts\chromedriver.exe", desired_capabilities=capabilities, options=chrome_options)
+driver = webdriver.Chrome(r"C:\Scrapes\ChromeDriver\chromedriver.exe", desired_capabilities=capabilities, options=chrome_options)
 driver.set_window_size(3440, 1440)
 
 # Configuring Zyte to work with requests
